@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #C8A2C8;
+            display: block;
+        }
+
+        .top-section {
+            position: relative;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 50px 20px;
+            height: 200px;
+        }
+
+        .circle-container {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(108, 0, 191);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 250px;
+            margin-right: 70px;
+        }
+
+        .circle-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .text-container {
+            text-align: left;
+        }
+
+        .text-container p:first-child {
+            font-size: 70px;
+            color: rgb(176, 84, 247);
+            margin: 0;
+        }
+
+        .text-container p:last-child {
+            font-size: 20px;
+            color: white;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            margin: 50px;
+            gap: 20px;
+        }
+
+        .text-section {
+            flex: 1;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(1, 1, 1, 1);
+            margin-bottom: 50px;
+        }
+
+        .video-container {
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 500px;
+        }
+
+        video {
+            width: 100%;
+        height: 100%; 
+        object-fit: cover; 
+        border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center ;
+            font-size: 40px;
+            color: black;
+            margin-top: 50px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            line-height: 1.6;
+        }
+
+    .video-container {
+        flex: 1;
+        margin-top: 150px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            text-align: center;
+    }
+
+.icon-text-container {
+    margin-top: 100px;
+            display: flex;
+            flex-direction: column; 
+            gap: 10px;
+            align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-text {
+    font-size: 15px;
+    color: black;
+    text-align: right;
+}
+
+
+
+    
+    </style>
+</head>
+<body>
+
+    <div class="top-section">
+        <div class="circle-container">
+            <img src="mypicnobg.png" alt="My Picture" title="Ma. Bernadette Villanueva">
+        </div>
+
+        <div class="text-container">
+            <p><small>Hi!</small> <i>I'm Maria</i></p>
+            <p>
+                <small>a</small>
+                <b><big>Bachelor of Science in Information Technology</big></b>
+                <small>student</small>
+            </p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="text-section">
+            <p style="font-size: 50px; color:rgb(108, 0, 191)"><b>About Me</b></p>
+            <p> My name is <i><big>Ma. Bernadette Villanueva.</big></i></p>
+            <p>
+                I'm currently a third-year BSIT student studying at 
+                <b>Polytechnic University of the Philippines - Bataan Campus.</b>
+            </p>
+            <p>
+                Before studying at PUP, I have gained more knowledge and experience through 
+                <b>Technical Education and Skills Development Authority</b> 
+                at SOFTNET Information Technology Center.
+            </p>
+            <p>
+                I've acquired <i>Computer Systems Servicing National Certificate II.</i>
+            </p>
+
+            <div class="icon-text-container">
+
+                <a href="https://www.facebook.com/ma.bernadette.villanueva" target="blank">
+                <img src="fb.png" alt="My FB" class="icon">
+                </a>
+
+                <a href="https://www.facebook.com/ma.bernadette.villanueva" target="blank">
+                <p class="icon-text">Maria Villanueva
+                </a>
+                </p> 
+        
+                <a href="mailto:maria3437119@gmail.com" target="blank">
+                <img src="gmail.png" alt="My Email" class="icon">
+                </a>
+
+                <a href="mailto:maria3437119@gmail.com" target="blank">
+                <p class="icon-text">maria3437119@gmail.com
+            </a>
+        </p>
+
+            </div>
+
+        </div>
+
+        <div class="video-container">
+            <video muted loop autoplay title="Polytechnic University of the Philippines - Bataan Campus">
+                <source src="school.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>
